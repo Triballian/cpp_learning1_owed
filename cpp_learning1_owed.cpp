@@ -2,10 +2,44 @@
 //
 
 #include <iostream>
+#include <string>
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	//payments
+	float rent = 547.50;
+	float adobe = 57.36;
+	float youtube = 10.71;
+	float linkedin = 34.46;
+	float scribd = 8.99;
+	float hboprime = 16.23;
+	float autoinsurance = 100;
+	float tivo = 17.98;
+	float water_electric = 55.80;
+	float storage = 70;
+	float shadow = 37.83;
+	float cc_com = 10.58;
+	float stakeco = 8.54;
+	float netflix = 17.31;
+	float total = rent + adobe + youtube + linkedin + scribd + hboprime + autoinsurance + tivo + water_electric + storage + shadow + cc_com + stakeco + netflix;
+	std::cout << "Greetings! Monthy Expense total is:";
+	std::string pout = "Your total is:          ";
+	//std::cout << pout << total;
+	const std::string spaces(pout.size(), ' ');
+	const std::string second = "* " + spaces + " *";
+	const std::string first(second.size(), '*');
+	std::cout << std::endl;
+	std::cout << first << std::endl;
+	std::cout << second << std::endl;
+	std::cout << "* " << pout << total << "* " << std::endl;
+	std::cout << second << std::endl;
+	std::cout << first << std::endl;
+
+
+
+
+	std::cout << "Hello World!\n";
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
